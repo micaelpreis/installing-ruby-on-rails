@@ -3,13 +3,13 @@
 
 In this tutorial you are going to learn how to install Ruby On Rails on Mac OS X 10.11 El Capitan. 
 
-To do so, just follow the steps below.
+To do so, just follow the three easy steps below.
 
 ### 1. Installing Homebrew
 
 [Homebrew](http://brew.sh/) is a package manager for OS X that allows you to install useful packages. 
 
-To install it you need to have installed on you mac, the apple program Xcode and to have said 'Yes' when you were asked if you wanted to install Command Line Developer Tools. 
+To install it you need to have installed on you mac the program Xcode and to have said 'Yes' when you were asked if you wanted to install Command Line Developer Tools. 
 
 After you have installed Xcode, you just need to run your Terminal the following command.
 
@@ -35,7 +35,7 @@ Now that the command is added to the file we just need to execute the file so th
 
 	source ~/.bash_profile
 
-With rbenv installed and configurated, it's time to install Ruby. In this tutorial we are installing the version 2.3.0 of Ruby, but feel free to install the version that you desire.
+With rbenv installed and configured, it's time to install Ruby. In this tutorial we are installing the version 2.3.0 of Ruby, but feel free to install the version that you desire.
 	
 To install Ruby run the following command.
 
@@ -54,6 +54,29 @@ If you want to set a specific version of Ruby to only one project, run the follo
 If you want to check you current Ruby version, run the following command.
 
 	ruby -v
+
+**Note:** If you want to know which is the current stable version of Ruby, just go [here](https://www.ruby-lang.org/en/downloads/).
+
+### 3. Installing Rails
+
+Finally, the last step is to install Rails. This can be achieved by running two simple commands on your Terminal. The first command installs Rails.
+
+	gem install rails -v 4.2.6
+
+The second command is to let rbenv know that rails is installed and to create de executable.
+
+	rbenv rehash
+
+You have now successfully installed Ruby on Rails on your Mac OS X.
+
+**Other Commands**
+
+If you want to check you current Rails version, run the following command.
+	
+	rails -v
+
+**Note:** If you want to know which is the current stable version of Rails, just go [here](https://rubygems.org/gems/rails).
+
 
 
 
